@@ -37,7 +37,7 @@ btn.addEventListener("click", async () => {
   msg.innerHTML = `<span style="font-size: 0.9rem; color: #6b6b6b; font-style: italic;">Verificando CNPJ...</span>`;
 
   try {
-    const r = await fetch("http://localhost:3000/api/validate-cnpj", {
+    const r = await fetch("https://elomaterno-backend.onrender.com/api/validate-cnpj", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ cnpj })
